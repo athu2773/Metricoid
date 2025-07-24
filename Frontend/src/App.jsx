@@ -7,7 +7,7 @@ const App=()=>{
   const [users,setUsers] =useState([]);
 
   useEffect(()=>{
-    axios.get("")
+    axios.get("https://metricoid-jm2l.onrender.com/api/users")
     .then(res=>setUsers(res.data))
     .catch(err=>console.log(err));
 
