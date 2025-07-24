@@ -14,7 +14,7 @@ const App=()=>{
   },[])
 
   return(
-    <div>
+    <div className="p-4 grid grid-cols-1 md:grid-cols-2 gap-6">
       {users.map(user=><UserCard key={user._id} user={user}/>)}
     </div>
   )
